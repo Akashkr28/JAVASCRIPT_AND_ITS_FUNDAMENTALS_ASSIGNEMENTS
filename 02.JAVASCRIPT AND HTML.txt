@@ -1,0 +1,83 @@
+Question 2: Explain the key differences between JavaScript and HTML. Provide examples of situations where you would use each.
+
+Answer :- JavaScript and HTML are both fundamental technologies in web development, but they serve very different purposes. Here are the key differences between them 		and examples of when to use each:
+
+	HTML (HyperText Markup Language)
+		Purpose: HTML is a markup language used to structure and present content on the web. It defines the elements and layout of a web page.
+
+	KEY CHARACTERISTICS:
+		1. Structure: HTML provides the skeleton of a webpage by defining elements like headings, paragraphs, images, links, tables, and forms.
+		2. Static Content: HTML content is static, meaning it doesn't change without user intervention or other technologies.
+		3. Tags: HTML uses tags (e.g., <h1>, <p>, <a>) to define elements. Tags can also have attributes that provide additional information (e.g., class, id).
+
+	Example Usage:
+	- Creating a Webpage Layout: Use HTML to create the basic structure of a webpage, including headers, footers, navigation menus, and content sections.
+	    
+	    <!DOCTYPE html>
+	    <html>
+	    <head>
+	        <title>My Webpage</title>
+	    </head>
+	    <body>
+	        <h1>Welcome to My Webpage</h1>
+	        <p>This is a paragraph of text.</p>
+	        <a href="https://www.example.com">Visit Example</a>
+	    </body>
+	    </html>
+    
+
+	JAVASCRIPT
+		Purpose: JavaScript is a programming language used to create dynamic and interactive web content. It enables client-side scripting and manipulation of 			HTML and CSS.
+
+	KEY CHARACTERISTICS:
+		1. Interactivity: JavaScript allows developers to add interactive elements such as form validation, animations, and dynamic content updates.
+		2. Behavior: JavaScript can respond to user actions (e.g., clicks, keyboard input) and manipulate the DOM to change the content and appearance of a web 				page.
+		3. Programming Logic: JavaScript can implement complex logic, perform calculations, handle asynchronous operations, and interact with external APIs.
+
+	Example Usage:
+	- Adding Interactivity: Use JavaScript to make a webpage interactive, such as displaying an alert when a button is clicked.
+	    
+	    <!DOCTYPE html>
+	    <html>
+	    <head>
+	        <title>Interactive Webpage</title>
+	    </head>
+	    <body>
+	        <h1>Click the Button</h1>
+	        <button id="myButton">Click Me</button>
+
+	        <script>
+	            document.getElementById('myButton').onclick = function() {
+	                alert('Button Clicked!');
+	            };
+	        </script>
+	    </body>
+	    </html>
+    
+
+	KEY DIFFERENCES:
+	1. Functionality:
+	   - HTML: Defines the structure and content of the web page.
+	   - JavaScript: Adds behavior and interactivity to the web page.
+
+	2. Nature:
+	   - HTML: Markup language (static content).
+	   - JavaScript: Programming language (dynamic content).
+
+	3. Usage Context:
+	   - HTML: Used to create the foundation and layout of a web page.
+	   - JavaScript: Used to enhance the user experience by adding dynamic features.
+
+	SITUATION FOR USE:
+	- HTML:
+	  - Creating the basic layout of a webpage.
+	  - Defining content sections such as headers, paragraphs, images, and links.
+	  - Structuring forms for user input.	
+
+	- JavaScript:
+	  - Validating form inputs before submission.
+	  - Creating interactive elements like image sliders or modal dialogs.
+	  - Updating content dynamically without reloading the page (e.g., fetching data from a server).
+
+	EXAMPLE INTEGRATION:
+		HTML and JavaScript are often used together to create rich web experiences

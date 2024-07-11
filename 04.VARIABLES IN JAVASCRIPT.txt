@@ -1,0 +1,88 @@
+Question 4: What is the purpose of declaring variables in JavaScript, and how do you declare them using the 'let' keyword?
+
+Answer :- Declaring variables in JavaScript is essential for storing and manipulating data. Variables act as containers for data values that can be used and modified 	throughout a program. By declaring variables, developers can give meaningful names to data, making the code more readable, maintainable, and easier to 	understand.
+
+	Purpose of Declaring Variables:
+		1. Storing Data: Variables store data values that can be used later in the program.
+		2. Reusability: Values stored in variables can be reused multiple times throughout the code.
+		3. Maintainability: Named variables make the code easier to read, understand, and maintain.
+		4. Dynamic Data Handling: Variables can store dynamic data that changes based on user input or other factors.
+
+	Declaring Variables Using the let Keyword:
+		The let keyword is used to declare variables that are block-scoped, meaning they are only accessible within the block (e.g., a function or loop) where 		they are defined. This is different from the var keyword, which declares variables with function scope or global scope.
+
+	Syntax:
+	
+	let variableName = value;
+
+
+	- let: Keyword used to declare a variable.
+	- variableName: The name of the variable.
+	- value: The initial value assigned to the variable (optional).
+
+	Examples:
+
+	1. Declaring a Variable with Initial Value:
+	   
+	   let age = 25;
+	   console.log(age); // Outputs: 25
+   
+	
+	2. Declaring a Variable without Initial Value:
+	   
+	   let name;
+	   console.log(name); // Outputs: undefined
+	   name = "Alice";
+	   console.log(name); // Outputs: Alice
+   
+
+	3. Block Scope with let:
+
+	   let greeting = "Hello, World!";
+	   if (true) {
+	       let greeting = "Hello, Block!";
+	       console.log(greeting); // Outputs: Hello, Block!
+	   }
+	   console.log(greeting); // Outputs: Hello, World!
+   
+
+	4. Loop Example with let:
+	   
+	   for (let i = 0; i < 3; i++) {
+	       console.log(i); // Outputs: 0, 1, 2
+	   }
+	   console.log(i); // Error: i is not defined
+   
+
+	Key Points:
+	- Block Scope: Variables declared with let are only accessible within the block they are defined.
+	- No Hoisting Issues: Unlike var, let does not suffer from hoisting issues where variables are accessible before they are declared.
+	- Redefinition: Variables declared with let cannot be redeclared within the same scope, preventing accidental reassignments.
+	
+	Example Use Cases:
+	- User Input Handling:
+	  
+	  let userName = prompt("Enter your name:");
+	  alert("Hello, " + userName + "!");
+  
+
+	- Loop Iterations:
+	  
+	  let sum = 0;
+	  for (let i = 1; i <= 10; i++) {
+	      sum += i;
+	  }
+	  console.log(sum); // Outputs: 55
+  
+
+	- Conditional Logic:
+	  
+	  let isLoggedIn = true;
+	  if (isLoggedIn) {
+	      let message = "Welcome back!";
+	      console.log(message); // Outputs: Welcome back!
+	  }
+	  console.log(message); // Error: message is not defined
+  
+
+	Declaring variables with the let keyword is a best practice in modern JavaScript development, providing better control over variable scope and reducing the 	likelihood of bugs caused by accidental global variable declarations or reassignments.

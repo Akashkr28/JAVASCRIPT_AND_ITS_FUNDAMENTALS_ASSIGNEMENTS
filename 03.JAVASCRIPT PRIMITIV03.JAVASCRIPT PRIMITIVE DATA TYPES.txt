@@ -1,0 +1,79 @@
+Question 4: List and describe the five primitive data types in JavaScript.
+
+Answer: In JavaScript, there are five primitive data types, which are basic and immutable. Here is a list and description of each:
+
+	1. NUMBER
+	The Number type in JavaScript is used to represent both integer and floating-point numbers.
+
+	- Examples:
+	  
+	  let age = 30;            // Integer
+	  let temperature = 98.6;  // Floating-point
+	  let negative = -15;      // Negative number
+	  let notANumber = NaN;    // Not-a-Number
+  
+
+	- Characteristics:
+	  - JavaScript uses a double-precision 64-bit floating-point format.
+	  - Special values include Infinity, -Infinity, and NaN (Not-a-Number).
+
+	2. STRING
+	The String type represents a sequence of characters used to store and manipulate text.
+
+	- Examples:
+	  
+	  let greeting = "Hello, World!";
+	  let singleChar = 'A';
+	  let multiline = This is
+	  a multiline
+	  string.;
+  
+
+	- Characteristics:
+	  - Strings can be defined using single quotes ('), double quotes ("), or backticks (  ).
+	  - Backticks allow for template literals, enabling embedded expressions and multi-line strings.
+
+	3. BOOLEAN
+	The Boolean type represents a logical entity and can have two values: true or false.
+
+	- Examples:
+	 
+	  let isCompleted = true;
+	  let isOverdue = false;
+  
+
+	- Characteristics:
+	  - Booleans are commonly used in conditional statements and control flow.
+
+	4. UNDEFINED
+	A variable that has been declared but not assigned a value has the type undefined.
+
+	- Examples:
+	  
+	  let x;
+	  console.log(x); // undefined
+  
+
+	- Characteristics:
+	  - Indicates that a variable has been declared but not yet assigned a value.
+
+	5. NULL
+	The null type represents the intentional absence of any object value. It is often used to indicate that a variable should have no value.
+
+	- Examples:
+
+	  let user = null;
+  
+
+	- Characteristics:
+	  - null is an assignment value that can be used to represent the absence of a value.
+	  - typeof null returns object, which is a quirk in JavaScript (but null is not actually an object).
+
+	SUMMARY:
+	These primitive data types form the basic building blocks for data manipulation in JavaScript. Understanding and using them correctly is crucial for effective 	programming in JavaScript.
+	
+	- Number: Represents numeric values.
+	- String: Represents sequences of characters.
+	- Boolean: Represents logical true/false values.
+	- Undefined: Indicates a variable has not been assigned a value.
+	- Null: Represents an intentional absence of value.
